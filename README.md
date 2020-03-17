@@ -1,20 +1,23 @@
 # Apprentice
+
 ### Udacity Machine Learning Engineer Nanodegree Capstone Project
 
 Apprentice is an automatic test assessment engine made as part of the Capstone Project in Udacity's Machine Learning Engineer Nanodegree.
+
+The Project Report can be found [here](Project Report.pdf)
 
 ## Setup
 
 ### Libraries Required
 
-* Tensorflow 2.0 (Preferably GPU version)
-* Tensorflow-Hub
-* Scikit Learn
-* Numpy
-* Pandas
-* tqdm
-* Matplotlib
-* Anvil-Uplink (`pip install anvil-uplink`)
+- Tensorflow 2.0 (Preferably GPU version)
+- Tensorflow-Hub
+- Scikit Learn
+- Numpy
+- Pandas
+- tqdm
+- Matplotlib
+- Anvil-Uplink (`pip install anvil-uplink`)
 
 ## Usage
 
