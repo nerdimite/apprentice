@@ -1,0 +1,100 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Apprentice is an automatic test assessment engine. It can assess a student's answer and return the number of facts the student the got right given the solution by the teacher.,
+      font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'NBYQMN,WFMSKP'}
+  - type: Spacer
+    properties: {height: 20}
+    name: spacer_1
+    layout_properties: {grid_position: 'YVFHSQ,QRDLMW'}
+  - type: Label
+    properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Teacher's Solution, font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'WQICUN,BYQBKR'}
+  - type: Label
+    properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Student's Answer, font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {grid_position: 'WQICUN,IRILZS'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Enter the facts of the solution as separate sentences or lines.,
+      font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    name: label_5
+    layout_properties: {grid_position: 'FJVCDT,VRSIMW'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Enter the answer given by the student., font_size: 16,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_7
+    layout_properties: {grid_position: 'FJVCDT,OMPNES'}
+  - type: TextArea
+    properties: {role: null, align: left, height: 245, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: 'The woman cried
+        out for help because a snake had trespassed into her house.
+
+        The old woman was happy because she got a precious pearl necklace.', font_size: null,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: solution
+    layout_properties: {grid_position: 'CDSAGQ,OVAIWE'}
+  - type: TextArea
+    properties: {role: null, align: left, height: 245, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: The lady was happy as she got a necklace,
+      font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: answer
+    layout_properties: {grid_position: 'CDSAGQ,KEABOY'}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Evaluate, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: check
+    layout_properties: {grid_position: 'HAFFNT,NORGQY'}
+    event_bindings: {click: check_click}
+  - type: Label
+    properties: {role: text, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 18, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: false,
+      icon: ''}
+    name: result
+    layout_properties: {grid_position: 'JBDVZL,QNWEIN'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Udacity Capstone Project, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Apprentice, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_1
+  layout_properties: {slot: title}
