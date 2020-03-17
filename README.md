@@ -4,7 +4,7 @@
 
 Apprentice is an automatic test assessment engine made as part of the Capstone Project in Udacity's Machine Learning Engineer Nanodegree.
 
-The Project Report can be found [here](<Project\ Report.pdf>)
+The Project Report can be found [here](Project_Report.pdf)
 
 ## Setup
 
