@@ -31,3 +31,7 @@ The pretrained model can be used to perform inference and make predictions with 
 ### Train
 
 If you wish to re-train the model, you can refer [Train.ipynb](Train.ipynb) notebook.
+
+## References
+* Dataset: https://www.quora.com/q/quoradata/First-Quora-Dataset-Release-Question-Pairs
+* Benchmark Models: https://towardsdatascience.com/finding-similar-quora-questions-with-bow-tfidf-and-random-forest-c54ad88d1370
